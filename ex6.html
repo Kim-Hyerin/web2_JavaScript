@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <script>
+        function two(){
+            document.write('<li>2-1</li>');
+            document.write('<li>2-2</li>'); 
+            }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+    </script>
+    <h2>Parameter & Argument</h2>
+    <script>
+        function onePlusone(){
+            document.write(1+1+'<br>');
+        }
+        onePlusone();
+
+        function sum(left,right){
+            document.write(left+right+'<br>');
+        }
+        function sumColorRed(left,right){
+            document.write('<div style="color:red">'+(left+right)+'</div><br>')
+            // 문자+숫자의 경우 숫자를 문자로 인식하기 때문에 연산은 괄호() 해야 함
+        }
+        sum(2,3);
+        sum(3,4);
+        sumColorRed(3,4);
+    </script>
+    <h2>Return</h2>
+    <script>
+        function sum2(left,right){
+            return left+right;
+        }
+        document.write(sum2(2,3)+'<br>');
+        document.write('<div style="color:red">'+sum2(2,3)+'</div>');
+        document.write('<div style="font-size:3rem">'+sum2(2,3)+'</div>');
+    </script>
+</body>
+</html>
